@@ -1,0 +1,13 @@
+<?php
+session_start();
+$_SESSION['show']=$_GET['show'];
+$_SESSION['movie']=$_GET['movie'];
+$_SESSION['theater']=$_GET['theater'];
+if(isset($_SESSION['userss']))
+{
+    header('location:booking.php');
+}
+else
+{
+    header('location:login.php');
+}
