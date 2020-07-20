@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+}
+
+.judul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: white !important;
+}
+
+.checked {
+    color: orange;
+}
+
+.font-rating {
+    color: orange;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.poster-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.poster-genre {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #AFAFAF;
+    margin-top: -17px;
+}
+
+.poster-duration {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: white;
+    margin-top: -12px;
+}
+
+.poster-tombol {
+    width: 160px;
+    margin-top: -10px;
+}
+
+.poster-prev,
+.poster-next {
+    bottom: 300px;
+}

@@ -1,6 +1,6 @@
 <?php 
 // koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "db_percobaan");
+$conn = mysqli_connect("localhost", "root", "", "bioskop");
 
 function query ($query) {
     global $conn;

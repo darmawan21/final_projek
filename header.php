@@ -14,56 +14,17 @@ session_start();
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/css/header.css">
     <title>Document</title>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="movie.php">Theater</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <?php if (isset($_SESSION['userss'])) {
-                            $query = "SELECT * FROM user WHERE id ='" . $_SESSION['userss'] . "'";
-                            $result = mysqli_query($conn, $query);
-                            $row = mysqli_fetch_array($result); ?>
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <?php echo $row['username']; ?>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="">alfalsefj</a>
-                                <a class="dropdown-item" href="">alfalsefj</a>
-                                <a class="dropdown-item" href="">alfalsefj</a>
-                            </div>
-                    </li>
-                    <li class="nav-item">
-                    <?php } else { ?>
-                        <a class="nav-link" href="login.php">Login</a>
-                    <?php } ?>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logout.php">logout</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-    <!-- end navbar -->
+
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -83,7 +44,7 @@ session_start();
                         $result = mysqli_query($conn, $query);
                         $row = mysqli_fetch_array($result); ?>
                         <a class="nav-item nav-link" href="profil.php"><?php echo $row['username']; ?></a>
-                        
+
                     <?php } else { ?>
                         <a class="nav-item btn btn-danger tombol" href="login.php">Login</a>
                     <?php } ?>
